@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volkswagen Beetle | Fast Lane Garage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Same stylesheet as the home page, plus styles for this page only -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1><a href="index.html">Fast Lane Garage</a></h1>
+    <p>Pick your car. Every one fits in your pocket.</p>
+  </header>
+
+  <main>
+    <a class="back-link" href="index.html">Back to all cars</a>
+
+    <!--
+      HOW TO MAKE A PAGE FOR ANOTHER CAR:
+      1. Copy this file and rename it (for example bone-shaker.html).
+      2. Change the title, image src, name, price, description and details below.
+      3. In index.html, link that car's card to the new file.
+    -->
+
+    <div class="product-detail">
+
+      <!-- Left side: big image -->
+      <div class="image-box">
+        <img src="images/71dxmPkoq9L.webp" alt="Volkswagen Beetle" onerror="this.style.display='none'">
+      </div>
+
+      <!-- Right side: information -->
+      <div class="product-info">
+        <h2>Volkswagen Beetle</h2>
+        <p class="price">₹179</p>
+
+        <p class="description">
+          The small, round car that is recognized all over the world.
+        </p>
+
+        <table class="details">
+          <tr>
+            <th>Type</th>
+            <td>Real-car model</td>
+          </tr>
+          <tr>
+            <th>Scale</th>
+            <td>1:64</td>
+          </tr>
+          <tr>
+            <th>Body</th>
+            <td>Die-cast metal</td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td>Add your car's color here</td>
+          </tr>
+        </table>
+
+        <div class="buy-row">
+          <label for="qty">Quantity</label>
+          <input type="number" id="qty" name="qty" min="1" max="10" value="1">
+          <button>Buy</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Fan-made demo project. Not a real store and not affiliated with Mattel. Hot Wheels is a trademark of Mattel, Inc. Prices are sample values.</p>
+  </footer>
+
+</body>
+</html>

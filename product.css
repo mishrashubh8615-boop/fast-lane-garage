@@ -1,0 +1,117 @@
+/* Styles only for product.html. Colors come from style.css (:root). */
+
+/* Make the site name in the header a link without the blue underline */
+.site-header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--asphalt);
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: var(--track);
+}
+
+/* Two columns: image on the left, info on the right */
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  background: var(--white);
+  border: 2px solid var(--asphalt);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.product-info h2 {
+  margin: 0 0 8px;
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.product-info .price {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+}
+
+.description {
+  max-width: 55ch;
+  margin: 0 0 20px;
+}
+
+/* Details table */
+.details {
+  width: 100%;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+}
+
+.details th,
+.details td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.details th {
+  width: 35%;
+  font-weight: 600;
+}
+
+/* Quantity and Buy button */
+.buy-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.buy-row label {
+  font-weight: 600;
+}
+
+.buy-row input {
+  width: 70px;
+  padding: 9px;
+  border: 2px solid var(--asphalt);
+  border-radius: 4px;
+  font: inherit;
+}
+
+.buy-row button {
+  padding: 10px 28px;
+  border: 2px solid var(--asphalt);
+  border-radius: 4px;
+  background: var(--yellow);
+  color: var(--asphalt);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buy-row button:hover {
+  background: var(--asphalt);
+  color: var(--yellow);
+}
+
+.buy-row button:focus-visible,
+.buy-row input:focus-visible {
+  outline: 3px solid var(--track);
+  outline-offset: 2px;
+}
+
+/* On phones, stack the image above the info */
+@media (max-width: 700px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
